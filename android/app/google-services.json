@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "515189087401",
+    "project_id": "mindhaven-e1ed1",
+    "storage_bucket": "mindhaven-e1ed1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515189087401:android:adbbfb49970f875cf51db8",
+        "android_client_info": {
+          "package_name": "com.dhriti.mindhaven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515189087401-epgj4ghvih6tel4icmo74j70dr69dk7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhriti.mindhaven",
+            "certificate_hash": "da8bced9d9a3f3028fc951dbe3dffa3202ac9987"
+          }
+        },
+        {
+          "client_id": "515189087401-23b2kkgjln75r88acseitjskuba7bq2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtvZR5JaDrOokb1myxK_1HVQBSrLLfTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515189087401-23b2kkgjln75r88acseitjskuba7bq2t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "515189087401-i38na6lgd5h9n2kjbcgeb05rh8l7krqc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mindhaven"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

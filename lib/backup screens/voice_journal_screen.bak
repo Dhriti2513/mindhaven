@@ -1,0 +1,100 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter_sound/flutter_sound.dart'
+    if (dart.library.html) 'stub_sound.dart';
+
+class VoiceJournalScreen extends StatefulWidget {
+  const VoiceJournalScreen({super.key});
+
+  @override
+  State<VoiceJournalScreen> createState() => _VoiceJournalScreenState();
+}
+
+class _VoiceJournalScreenState extends State<VoiceJournalScreen> {
+  FlutterSoundRecorder? _recorder;
+  FlutterSoundPlayer? _player;
+  bool isRecording = false;
+  bool isPlaying = false;
+
+  // ...rest of your code here
+
+  @override
+  void initState() {
+    super.initState();
+    if (!kIsWeb) {
+      _recorder = FlutterSoundRecorder();
+      _player = FlutterSoundPlayer();
+    }
+  }
+
+  Future<void> _startRecording() async {
+    if (!kIsWeb && _recorder != null) {
+      await _recorder!.startRecorder(toFile: 'voice_note.aac');
+      setState(() => isRecording = true);
+    }
+  }
+
+  Future<void> _stopRecording() async {
+    if (!kIsWeb && _recorder != null) {
+      await _recorder!.stopRecorder();
+      setState(() => isRecording = false);
+    }
+  }
+
+  Future<void> _playRecording() async {
+    if (!kIsWeb && _player != null) {
+      await _player!.startPlayer(fromURI: 'voice_note.aac');
+      setState(() => isPlaying = true);
+    }
+  }
+
+  Future<void> _stopPlaying() async {
+    if (!kIsWeb && _player != null) {
+      await _player!.stopPlayer();
+      setState(() => isPlaying = false);
+    }
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Voice Journal'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              kIsWeb ? "Voice recording not supported on Web" : "Voice Journal",
+              style: TextStyle(fontSize: 20),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: kIsWeb
+                  ? null
+                  : isRecording
+                      ? _stopRecording
+                      : _startRecording,
+              child: Text(isRecording ? "Stop Recording" : "Start Recording"),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: kIsWeb
+                  ? null
+                  : isPlaying
+                      ? _stopPlaying
+                      : _playRecording,
+              child: Text(isPlaying ? "Stop Playback" : "Play Recording"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
