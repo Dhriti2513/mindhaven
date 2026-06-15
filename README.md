@@ -4,44 +4,69 @@
   A modern Mental Wellness & Self-Care Application built with Flutter.
 </p>
 
-MindHaven is a cross-platform wellness application designed to help users track emotions, maintain personal journals, practice mindfulness, and reflect on memories in a calming digital environment. The project focuses on creating a safe and aesthetically pleasing space for self-growth while demonstrating modern Flutter development practices.
+<p align="center">
+  Flutter • Supabase • PostgreSQL • Provider • Cross-Platform
+</p>
 
 ---
 
 ## 📖 Project Overview
 
-MindHaven combines mental wellness tools into a single platform where users can:
+MindHaven is a cross-platform mental wellness application designed to help users track emotions, maintain personal journals, practice mindfulness, and preserve meaningful memories in a calming digital environment.
 
-- Track daily moods using emoji-based mood logging
-- Maintain personal journals and reflections
-- Practice mindfulness through guided breathing exercises
-- Review emotional history and self-growth patterns
-- Customize their experience using themes and background environments
+The project combines modern Flutter development with a secure Supabase backend to provide a scalable, user-focused wellness platform. MindHaven emphasizes emotional awareness, self-reflection, and personal growth while maintaining a clean, responsive, and aesthetically pleasing user experience.
 
-The application is currently frontend-focused and is being prepared for backend integration using Supabase and PostgreSQL.
+The application currently features a production-ready backend foundation with secure authentication, cloud storage integration, PostgreSQL database architecture, and Row-Level Security (RLS). Current development efforts are focused on journal synchronization, analytics visualization, notifications, and production deployment.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
-### Frontend
+## Frontend
 - Flutter
 - Dart
 - Provider (State Management)
 
-### Local Storage
+## Local Storage
 - Shared Preferences
 
-### Backend
+## Backend
 - Supabase
 - PostgreSQL
 
-### Authentication
+## Authentication
 - Supabase Auth
 
-### Deployment Target
+## Cloud Infrastructure
+- Supabase Storage
+- Row-Level Security (RLS)
+
+## Deployment Targets
 - Flutter Web
 - Android
+
+---
+
+# 🔐 Authentication & Security
+
+- Secure Supabase Authentication
+- Persistent User Sessions
+- Cross-Platform Session Management
+- Deep-Link Redirect Handling
+- Row-Level Security (RLS)
+- User-Isolated Data Access
+- Secure Database Policies
+
+---
+
+# ☁️ Cloud Infrastructure
+
+- PostgreSQL Database
+- Supabase Storage Bucket Integration
+- Cloud Image Asset Management
+- Journal Media Upload Support
+- Scalable Backend Architecture
+- Secure Data Synchronization
 
 ---
 
@@ -58,7 +83,7 @@ The application is currently frontend-focused and is being prepared for backend 
 
 ## 🌄 Custom Background Environment System
 
-Users can personalize the app using multiple visual environments:
+Users can personalize the application using multiple visual environments.
 
 ### Calm Theme
 - Calm Light
@@ -72,16 +97,12 @@ Users can personalize the app using multiple visual environments:
 - Galaxy Light
 - Galaxy Dark
 
-Backgrounds are designed to be applied consistently throughout the application using a centralized background management system.
-
 ---
 
 ## 🏠 Home Dashboard
 
-The Home Screen includes:
-
 - Personalized Welcome Message
-- Daily Motivational Quote
+- Daily Motivational Quotes
 - Mood Summary Section
 - Journal Reminder Card
 - Mindfulness Prompt
@@ -91,8 +112,6 @@ The Home Screen includes:
 
 ## 😊 Mood Tracker
 
-Track emotions using emoji-based mood selection.
-
 ### Supported Mood Types
 
 - 😊 Happy
@@ -101,66 +120,46 @@ Track emotions using emoji-based mood selection.
 - 😡 Angry
 - 😴 Tired
 
-### Planned Enhancements
+### Features
 
-- Mood History
-- Mood Calendar
-- Mood Analytics
-- Trend Visualization
+- Mood Logging
+- Historical Mood Tracking
+- Daily Mood Records
+- Analytics-Ready Data Pipeline
 
 ---
 
 ## 📓 Journal Module
 
-A dedicated space for writing thoughts and reflections.
-
 ### Features
 
-- Journal Writing Interface
+- Rich Text Journal Writing
 - Reflection Notes
 - Daily Entries
-
-### Planned Enhancements
-
-- Cloud Storage
-- Edit Journal Entries
-- Delete Journal Entries
-- Search Functionality
-
----
-
-## 🧘 Mindfulness Module
-
-Designed to encourage relaxation and mental clarity.
-
-### Features
-
-- Guided Breathing Interface
-- Relaxation Exercises
-
-### Planned Enhancements
-
-- Breathing Animations
-- Meditation Timer
-- Audio Sessions
-- Sleep and Focus Guides
+- Cloud Synchronization
+- Image Attachment Support
+- Markdown-Based Content Storage
 
 ---
 
 ## 💭 Memory Reflection Module
 
-A personal reflection space where users can revisit meaningful memories and experiences.
+### Features
+
+- Memory Storage
+- Reflection Writing
+- Personal Growth Tracking
+- Memory History Management
+
+---
+
+## 🧘 Mindfulness Module
 
 ### Features
 
-- Reflection Writing
-- Memory Storage Interface
-
-### Planned Enhancements
-
-- Reflection History
-- Timeline View
-- Search and Filtering
+- Guided Breathing Exercises
+- Relaxation Sessions
+- Wellness Prompts
 
 ---
 
@@ -171,6 +170,7 @@ A personal reflection space where users can revisit meaningful memories and expe
 - Theme Selection
 - Background Selection
 - Preference Management
+- Persistent User Settings
 
 ---
 
@@ -179,23 +179,25 @@ A personal reflection space where users can revisit meaningful memories and expe
 | Module | Status |
 |----------|----------|
 | UI Screens | ✅ 95% Complete |
-| Navigation System | ✅ 100% Complete |
+| Navigation Architecture | ✅ 100% Complete |
 | Theme Management | ✅ 90% Complete |
 | Background Management | 🟡 75% Complete |
-| Shared Preferences | 🟡 70% Complete |
-| Database Schema Design | ✅ 100% Complete |
-| Supabase Project Setup | ✅ Complete |
-| Supabase Configuration | 🟡 In Progress |
-| Supabase Authentication | ❌ Not Started |
-| CRUD Integration | ❌ Not Started |
-| Analytics Dashboard | 🟡 20% Complete |
-| Web Deployment | ❌ 0% Complete |
+| Shared Preferences | ✅ Complete |
+| Authentication System | ✅ Complete |
+| Database Schema Design | ✅ Complete |
+| Supabase Infrastructure | ✅ Complete |
+| Row-Level Security (RLS) | ✅ Complete |
+| Cloud Storage Integration | ✅ Complete |
+| Journal Synchronization | 🟡 75% Complete |
+| Analytics Dashboard | 🟡 70% Complete |
+| Notification System | ❌ Not Started |
+| Production Web Build | ❌ Not Started |
 
 ### Overall Progress
 
-- **Frontend:** ~85-90% Complete
-- **Backend:** Not Started
-- **Total Project:** ~60-65% Complete
+- **Frontend:** ~90% Complete
+- **Backend:** ~85% Complete
+- **Overall Project:** ~85% Complete
 
 ---
 
@@ -207,198 +209,105 @@ A personal reflection space where users can revisit meaningful memories and expe
 lib/
 │
 ├── screens/
-│   ├── home
-│   ├── journal
-│   ├── mood
-│   ├── mindfulness
-│   ├── reflection
-│   └── settings
+│   ├── home/
+│   ├── journal/
+│   ├── mood/
+│   └── settings/
 │
 ├── providers/
-│   ├── theme_manager
-│   └── background_manager
+│   ├── auth_provider.dart
+│   ├── journal_provider.dart
+│   ├── mood_provider.dart
+│   ├── theme_manager.dart
+│   └── background_manager.dart
+│
+├── services/
+│   ├── supabase_service.dart
+│   └── storage_service.dart
 │
 ├── widgets/
-│
 ├── assets/
-│   ├── calm
-│   ├── forest
-│   └── galaxy
-│
 └── main.dart
 ```
 
 ## Database Schema (Supabase PostgreSQL)
 
 ### Profiles
-
-| Field | Type |
-|---------|---------|
-| id | UUID |
-| username | Text |
-| full_name | Text |
-| avatar_url | Text |
-| email | Text |
-| age | Integer |
-| background | Text |
-| dob | Date |
-| created_at | Timestamp |
-| updated_at | Timestamp |
+- id, username, full_name, avatar_url, email
+- age, background, dob
+- created_at, updated_at
 
 ### Moods
-
-| Field | Type |
-|---------|---------|
-| id | UUID |
-| user_id | UUID |
-| mood | Text |
-| date | Date |
-| created_at | Timestamp |
+- id, user_id, mood, date, created_at
 
 ### Journals
-
-| Field | Type |
-|---------|---------|
-| id | UUID |
-| user_id | UUID |
-| title | Text |
-| content | Text |
-| date | Date |
-| image_url | Text |
-| created_at | Timestamp |
+- id, user_id, title, content, date, image_url, created_at
 
 ### Memories
-
-| Field | Type |
-|---------|---------|
-| id | UUID |
-| user_id | UUID |
-| title | Text |
-| date | Date |
-| image_url | Text |
-| created_at | Timestamp |
-
-### Relationships
-
-```text
-auth.users
-    │
-    └── profiles
-          │
-          ├── moods
-          ├── journals
-          └── memories
-```
----
-
-# 📌 Pending Tasks
-
-## Phase 1: Frontend Polish
-
-- [ ] Fix global background wrapper
-- [ ] Resolve background inconsistency across screens
-- [ ] Fix Mindfulness screen background coverage
-- [ ] Improve responsiveness
-- [ ] UI consistency review
+- id, user_id, title, date, image_url, created_at
 
 ---
 
-## Phase 2: Supabase Integration
+# 📌 Remaining Development Roadmap
 
-- [ ] Connect Flutter application to Supabase
-- [ ] Configure environment variables and secure credentials
-- [ ] Implement Supabase Authentication
-- [ ] Enable Row Level Security (RLS)
-- [ ] Create service layer for database operations
+## Phase 1: Journal Synchronization
 
----
+- [ ] Complete journal_provider refactoring
+- [ ] Connect markdown editor directly to Supabase
+- [ ] Finalize image upload synchronization
+- [ ] Optimize cloud data flow
 
-## Phase 3: Database Connectivity
+## Phase 2: Analytics Dashboard
 
-- [ ] Implement Journal CRUD Operations
-- [ ] Implement Mood CRUD Operations
-- [ ] Implement Memory CRUD Operations
-- [ ] Create Repository/Service Layer
-- [ ] Connect Screens to Supabase
+- [ ] Complete fl_chart integration
+- [ ] Build mood trend visualizations
+- [ ] Implement weekly wellness summaries
+- [ ] Add journal activity statistics
 
----
+## Phase 3: Notification System
 
-## Phase 4: Analytics Dashboard
+- [ ] Implement local notifications
+- [ ] Configure timezone-aware reminders
+- [ ] Add recurring wellness check-ins
 
-- [ ] Mood Trends
-- [ ] Journal Statistics
-- [ ] Wellness Score
-- [ ] Activity Streaks
-- [ ] Weekly Insights
+## Phase 4: Production Deployment
 
----
-
-## Phase 5: Mindfulness Improvements
-
-- [ ] Guided Audio Sessions
-- [ ] Meditation Timers
-- [ ] Animated Breathing Exercises
-- [ ] Focus Sessions
-
----
-
-## Phase 6: Web Deployment
-
-- [ ] Deploy Flutter Web Application
-- [ ] Configure Production Environment Variables
-- [ ] Deploy to Vercel / Netlify / Supabase-compatible Hosting
+- [ ] Verify Flutter Web compilation
+- [ ] Perform responsive layout testing
+- [ ] Configure production environment variables
+- [ ] Deploy production build
 
 ---
 
 # 🔮 Future Enhancements
 
-- Google Sign-In via Supabase Auth
-- Email Authentication
-- User Profile Management
-- Personalized Quotes
-- Mood Prediction
 - AI Wellness Assistant
+- Personalized Quotes
+- Mood Prediction & Insights
 - Journal Export (PDF)
 - Calendar Integration
 - Wellness Streak Tracking
-- Data Visualization Dashboard
+- Advanced Data Visualization
+- Guided Meditation Library
 
 ---
 
 # 🛠️ Getting Started
 
-### Clone Repository
-
 ```bash
-git clone https://github.com/yourusername/mindhaven.git
+git clone https://github.com/Dhriti2513/mindhaven.git
 cd mindhaven
-```
-
-### Install Dependencies
-
-```bash
 flutter pub get
-```
-
-### Configure Supabase
-
-Create a `.env` file in the project root and add:
-
-```env
-SUPABASE_URL=your_project_url
-SUPABASE_ANON_KEY=your_anon_key
-```
-
-### Run Application
-
-```bash
 flutter run
 ```
 
-### Build Web Version
+## Configure Supabase
 
-```bash
-flutter build web
+Create a `.env` file:
+
+```env
+SUPABASE_URL=your_project_url
+SUPABASE_ANON_KEY=your_project_anon_key
 ```
 
 ---
@@ -413,7 +322,8 @@ This project is developed for educational, learning, and portfolio purposes.
 
 **Dhriti Dixit**
 
-B.Tech Computer Science & Engineering (Artificial Intelligence)  
+B.Tech Computer Science & Engineering (Artificial Intelligence)
+
 Flutter Developer • AI Enthusiast • Full-Stack Learner
 
-Passionate about building impactful applications that combine technology, user experience, and well-being.
+MindHaven represents my journey of combining Flutter development, cloud technologies, and mental wellness to build a scalable, production-ready cross-platform application focused on well-being and self-growth.
